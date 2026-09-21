@@ -1,0 +1,23 @@
+# =============================================================================
+# Python Dependencies
+# =============================================================================
+# Install with: pip install -r requirements.txt
+#
+# Version pinning (==) ensures reproducibility:
+# - Everyone gets the same versions
+# - Docker builds are consistent
+# - No surprises from automatic updates
+# =============================================================================
+
+# FastAPI - Modern web framework for building APIs
+# Includes automatic API documentation, request validation, etc.
+fastapi==0.115.0
+
+# Uvicorn - ASGI server that runs our FastAPI application
+# ASGI = Asynchronous Server Gateway Interface (the modern Python web standard)
+# The [standard] extra includes performance dependencies
+uvicorn[standard]==0.30.0
+
+# Pydantic - Data validation (FastAPI uses this internally)
+# Listed explicitly so we control the version
+pydantic==2.9.0
