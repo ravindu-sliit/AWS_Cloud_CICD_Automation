@@ -1,0 +1,27 @@
+# =============================================================================
+  # TERRAFORM VARIABLES - EXAMPLE FILE
+  # =============================================================================
+  # Copy this file to terraform.tfvars and fill in your values:
+  #   cp terraform.tfvars.example terraform.tfvars
+  #
+  # terraform.tfvars contains YOUR specific values and should NOT be committed
+  # to Git if it contains sensitive information.
+  # =============================================================================
+
+  # AWS Region
+  aws_region = "ap-southeast-2"
+
+  # Project name (used as prefix for all resources)
+  project_name = "assessment-api"
+
+  # Network settings
+  vpc_cidr           = "10.0.0.0/16"
+  public_subnet_cidr = "10.0.1.0/24"
+
+  # EC2 settings
+  instance_type = "t3.micro"
+
+  # YOUR IP address for SSH access
+  # Find your IP at: https://whatismyip.com
+  # Add /32 at the end (e.g., "203.45.67.89/32")
+  my_ip = "64.120.95.212/32"

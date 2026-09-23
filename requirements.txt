@@ -21,3 +21,7 @@ uvicorn[standard]==0.30.0
 # Pydantic - Data validation (FastAPI uses this internally)
 # Listed explicitly so we control the version
 pydantic==2.9.0
+
+# Testing
+pytest==8.3.0
+httpx==0.27.0
